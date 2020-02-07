@@ -10,6 +10,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    backgroundColor: "skyblue",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -24,15 +25,15 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.root}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Jackson's Portfolio
+            <h1>Lindy's Local Pest</h1>
           </Typography>
-          <a href="mailto: jackson.ogles28@gmail.com" style={{color: "white", textDecoration: "none"}}><Button color="inherit">Get In Contact</Button></a>
+          <a href="mailto: marcuslindmeir718@gmail.com?subject=Interested in Lindys Local Pest Control&body=Hello Lindys Local Pest Control!%0D%0A%0D%0AI am interested in learning more about your services.%0D%0A%0D%0ASincerely,%0D%0A%0D%0A<your name and contact information here>" style={{color: "white", textDecoration: "none"}}><Button color="inherit">Get In Contact</Button></a>
         </Toolbar>
       </AppBar>
     </div>
