@@ -33,7 +33,7 @@ export default function NavBar() {
           <Typography variant="h6" className={classes.title}>
             <h1>Lindy's Local Pest</h1>
           </Typography>
-          <a href="mailto: marcuslindmeir718@gmail.com?subject=Interested in Lindys Local Pest Control&body=Hello Lindys Local Pest Control!%0D%0A%0D%0AI am interested in learning more about your services.%0D%0A%0D%0ASincerely,%0D%0A%0D%0A<your name and contact information here>" style={{color: "white", textDecoration: "none"}}><Button color="inherit">Get In Contact</Button></a>
+          <a href="mailto: marcuslindmeir718@gmail.com?subject=Interested in Lindys Local Pest Control&body=Hello Lindys Local Pest Control!%0D%0A %0D%0A I am interested in learning more about your services. %0D%0A %0D%0A Sincerely, %0D%0A %0D%0A <your name and contact information here>" style={{color: "white", textDecoration: "none"}}><Button color="inherit">Get In Contact</Button></a>
         </Toolbar>
       </AppBar>
     </div>
