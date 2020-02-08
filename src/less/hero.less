@@ -4,25 +4,65 @@
   background-image: url('/images/happy-family.jpg');
   background-position: center;
   background-size: cover;
+  height: 55rem;
   .heroTextContainer {
-    // border: solid blue;
     display: flex;
     justify-content: flex-start;
-    .heroText {
-      // background-color: skyblue;
-      opacity: 0.9;
-      // border: solid red;
-      margin-top: 10rem;
-      margin-left: 5rem;
-      h4{
-        font-family: 'Lato', sans-serif;
-        font-size: 1.9rem;
+    // border: solid blue;
+    display: flex;
+    height: 100%;
+    .box1 {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      @media @mobile1 {
+        width: 100%;
+        height: 25%;
       }
-      h2{
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5rem;
-        margin-left: 1rem;
-        color: #3d86ca;
+      .heroText {
+        background: rgba(255, 255, 255, .5);
+        text-align: center;
+        width:70%;
+        height: 40%;
+        margin-top: 4rem;
+        border-radius: 5rem;
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+        @media @mobile1 {
+          margin-top: 0;
+        }
+        h4{
+          font-family: 'Lato', sans-serif;
+          font-size: 1.3rem;
+          margin-top: 3rem;
+          @media @mobile1 {
+            font-size: .5rem
+          }
+        }
+        h2{
+          font-family: 'Lato', sans-serif;
+          font-size: 2rem;
+          margin-top:3rem;
+          color: black;
+            @media @mobile1 {
+              font-size: .5rem
+            }
+        }
+      }
+    }
+    .box2{
+      width: 33%;
+      // border: solid red;
+      @media @mobile1 {
+        width:.1%;
+      }
+    }
+    .box3{
+      width: 33%;
+      // border: solid purple;
+      @media @mobile1 {
+        width:.1%;
       }
     }
   }

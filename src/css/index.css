@@ -138,25 +138,76 @@ html {
   background-image: url('/images/happy-family.jpg');
   background-position: center;
   background-size: cover;
+  height: 55rem;
 }
 .hero .heroTextContainer {
-  display: flex;
   justify-content: flex-start;
+  display: flex;
+  height: 100%;
 }
-.hero .heroTextContainer .heroText {
-  opacity: 0.9;
-  margin-top: 10rem;
-  margin-left: 5rem;
+.hero .heroTextContainer .box1 {
+  width: 33%;
+  display: flex;
+  justify-content: center;
 }
-.hero .heroTextContainer .heroText h4 {
+@media (max-width:500px) {
+  .hero .heroTextContainer .box1 {
+    width: 100%;
+    height: 25%;
+  }
+}
+.hero .heroTextContainer .box1 .heroText {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  width: 70%;
+  height: 40%;
+  margin-top: 4rem;
+  border-radius: 5rem;
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+}
+@media (max-width:500px) {
+  .hero .heroTextContainer .box1 .heroText {
+    margin-top: 0;
+  }
+}
+.hero .heroTextContainer .box1 .heroText h4 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
+  margin-top: 3rem;
 }
-.hero .heroTextContainer .heroText h2 {
+@media (max-width:500px) {
+  .hero .heroTextContainer .box1 .heroText h4 {
+    font-size: 0.5rem;
+  }
+}
+.hero .heroTextContainer .box1 .heroText h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 2.5rem;
-  margin-left: 1rem;
-  color: #3d86ca;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: black;
+}
+@media (max-width:500px) {
+  .hero .heroTextContainer .box1 .heroText h2 {
+    font-size: 0.5rem;
+  }
+}
+.hero .heroTextContainer .box2 {
+  width: 33%;
+}
+@media (max-width:500px) {
+  .hero .heroTextContainer .box2 {
+    width: 0.1%;
+  }
+}
+.hero .heroTextContainer .box3 {
+  width: 33%;
+}
+@media (max-width:500px) {
+  .hero .heroTextContainer .box3 {
+    width: 0.1%;
+  }
 }
 .navBar2 {
   display: flex;
@@ -174,4 +225,9 @@ html {
   padding-left: 0.7rem;
   border-radius: 8px;
   font-family: 'Lato', sans-serif;
+}
+@media (max-width:500px) {
+  .navBar2 a {
+    font-size: 0.5rem;
+  }
 }
