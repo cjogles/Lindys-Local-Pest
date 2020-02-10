@@ -13,12 +13,20 @@ div.footerContainer {
       color: white;
       padding-bottom: 2rem;
     }
+    p {
+      @media @mobile1 {
+        display: none;
+      }
+    }
   }
   div.box2 {
     width: 33%;
     display: flex;
     flex-direction: column;
     padding-left: 12rem;
+    @media @mobile1 {
+      padding-left: 1rem;
+    }
     a {
       padding: .5rem;
       text-decoration: none;
@@ -33,6 +41,42 @@ div.footerContainer {
       padding: .5rem;
       text-decoration: none;
       color: white;
+      @media @mobile1 {
+        padding-left:1rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+      width: 10rem;
+      a {
+        color: black;
+      }
+      @media @mobile1 {
+        display: none;
+      }
     }
   }
+}
+div.callNow {
+  display: none;
+  @media @mobile1 {
+    display: flex;
+    justify-content: center;
+    background-color: #3d86ca;
+    text-align: center;
+  }
+  button {
+    @media @mobile1 {
+      text-decoration: none;
+      margin-bottom: 1rem;
+      color: black;
+    }
+    a {
+      @media @mobile1 {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
 }

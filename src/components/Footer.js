@@ -18,7 +18,11 @@ export default function Footer() {
           <div className="box3">
             <a href="#">About Us</a>
             <a href="mailto: marcuslindmeir718@gmail.com?subject=Interested in Lindys Local Pest Controlbody=Hello Lindys Local Pest Control!%0D%0A %0D%0A I am interested in learning more about your services. %0D%0A %0D%0A Sincerely, %0D%0A %0D%0A <your name and contact information here>">Get In Contact</a> 
+            <button><a href="tel:3853140144">Call Now!</a></button>
           </div>
+        </div>
+        <div className="callNow">
+          <button><a href="tel:3853140144">Call Now!</a></button>
         </div>
     </>
   );

@@ -169,9 +169,10 @@ html {
 }
 @media (max-width:500px) {
   .hero .heroTextContainer .box1 .heroText {
-    margin-top: 0.4rem;
+    width: 60%;
+    margin-top: 2rem;
     height: 10rem;
-    margin-right: 4rem;
+    margin-right: 7rem;
   }
 }
 .hero .heroTextContainer .box1 .heroText h4 {
@@ -185,14 +186,18 @@ html {
     margin-top: 1rem;
   }
 }
-.hero .heroTextContainer .box1 .heroText h2 {
+.hero .heroTextContainer .box1 .heroText a {
+  text-decoration: none;
+}
+.hero .heroTextContainer .box1 .heroText a h2 {
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
   margin-top: 3rem;
   color: #3d86ca;
+  text-decoration: none;
 }
 @media (max-width:500px) {
-  .hero .heroTextContainer .box1 .heroText h2 {
+  .hero .heroTextContainer .box1 .heroText a h2 {
     font-size: 1.7rem;
     margin-top: 1.2rem;
   }
@@ -293,6 +298,11 @@ div.bugs div.bugsMenu h2 {
   padding-bottom: 1rem;
   box-shadow: 20px 20px 50px gray;
 }
+@media (max-width:500px) {
+  div.bugs div.bugsMenu h2 {
+    font-size: 1rem;
+  }
+}
 div.bugs div.bugsMenu p {
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
@@ -302,6 +312,11 @@ div.bugs div.bugsMenu p {
   color: black;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+@media (max-width:500px) {
+  div.bugs div.bugsMenu p {
+    font-size: 1rem;
+  }
 }
 div.bugs div.explore-bugs {
   display: flex;
@@ -320,6 +335,13 @@ div.bugs div.explore-bugs div.bug-row1 div div {
 div.bugs div.explore-bugs div.bug-row1 div div img {
   width: 10rem;
   height: 10rem;
+}
+@media (max-width:500px) {
+  div.bugs div.explore-bugs div.bug-row1 div div img {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+  }
 }
 div.bugs div.explore-bugs div.bug-row1 div div h2 {
   text-align: center;
@@ -340,6 +362,13 @@ div.bugs div.explore-bugs div.bug-row2 div div img {
   width: 10rem;
   height: 10rem;
 }
+@media (max-width:500px) {
+  div.bugs div.explore-bugs div.bug-row2 div div img {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+  }
+}
 div.bugs div.explore-bugs div.bug-row2 div div h2 {
   text-align: center;
   padding-top: 0.5rem;
@@ -359,6 +388,13 @@ div.bugs div.explore-bugs div.bug-row3 div div img {
   width: 10rem;
   height: 10rem;
 }
+@media (max-width:500px) {
+  div.bugs div.explore-bugs div.bug-row3 div div img {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+  }
+}
 div.bugs div.explore-bugs div.bug-row3 div div h2 {
   text-align: center;
   padding-top: 0.5rem;
@@ -377,6 +413,13 @@ div.bugs div.explore-bugs div.bug-row4 div div {
 div.bugs div.explore-bugs div.bug-row4 div div img {
   width: 10rem;
   height: 10rem;
+}
+@media (max-width:500px) {
+  div.bugs div.explore-bugs div.bug-row4 div div img {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+  }
 }
 div.bugs div.explore-bugs div.bug-row4 div div h2 {
   text-align: center;
@@ -403,11 +446,21 @@ div.footerContainer div.box1 h2 {
   color: white;
   padding-bottom: 2rem;
 }
+@media (max-width:500px) {
+  div.footerContainer div.box1 p {
+    display: none;
+  }
+}
 div.footerContainer div.box2 {
   width: 33%;
   display: flex;
   flex-direction: column;
   padding-left: 12rem;
+}
+@media (max-width:500px) {
+  div.footerContainer div.box2 {
+    padding-left: 1rem;
+  }
 }
 div.footerContainer div.box2 a {
   padding: 0.5rem;
@@ -423,4 +476,45 @@ div.footerContainer div.box3 a {
   padding: 0.5rem;
   text-decoration: none;
   color: white;
+}
+@media (max-width:500px) {
+  div.footerContainer div.box3 a {
+    padding-left: 1rem;
+  }
+}
+div.footerContainer div.box3 button {
+  margin-top: 1rem;
+  width: 10rem;
+}
+div.footerContainer div.box3 button a {
+  color: black;
+}
+@media (max-width:500px) {
+  div.footerContainer div.box3 button {
+    display: none;
+  }
+}
+div.callNow {
+  display: none;
+}
+@media (max-width:500px) {
+  div.callNow {
+    display: flex;
+    justify-content: center;
+    background-color: #3d86ca;
+    text-align: center;
+  }
+}
+@media (max-width:500px) {
+  div.callNow button {
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: black;
+  }
+}
+@media (max-width:500px) {
+  div.callNow button a {
+    text-decoration: none;
+    color: black;
+  }
 }

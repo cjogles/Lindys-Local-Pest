@@ -17,6 +17,9 @@ div.bugs {
         padding-top: 1rem;
         padding-bottom: 1rem;
         box-shadow: 20px 20px 50px gray;
+        @media @mobile1 {
+          font-size: 1rem;
+        }
       }
       p{
         font-family: 'Lato', sans-serif;
@@ -27,6 +30,9 @@ div.bugs {
         color: black;
         padding-top: 3rem;
         padding-bottom: 3rem;
+        @media @mobile1 {
+          font-size: 1rem;
+        }
       }
     }
     div.explore-bugs {
@@ -36,7 +42,6 @@ div.bugs {
       margin-left: 10%;
       // border: solid red;
       div.bug-row1 {
-        // border: solid blue;
         div {
           display: flex;
           justify-content: space-evenly;
@@ -46,7 +51,12 @@ div.bugs {
             img {
               // border: solid black;
               width: 10rem;
-              height: 10rem;          
+              height: 10rem;    
+              @media @mobile1 {
+                width: 6rem;
+                height: 6rem; 
+                padding: 1rem;
+              }      
             }
             h2 {
               text-align: center;
@@ -67,7 +77,12 @@ div.bugs {
             img {
               // border: solid black;
               width: 10rem;
-              height: 10rem;          
+              height: 10rem;   
+              @media @mobile1 {
+                width: 6rem;
+                height: 6rem; 
+                padding: 1rem;
+              }          
             }
             h2 {
               text-align: center;
@@ -88,7 +103,12 @@ div.bugs {
             img {
               // border: solid black;
               width: 10rem;
-              height: 10rem;          
+              height: 10rem;  
+              @media @mobile1 {
+                width: 6rem;
+                height: 6rem; 
+                padding: 1rem;
+              }           
             }
             h2 {
               text-align: center;
@@ -109,7 +129,12 @@ div.bugs {
             img {
               // border: solid black;
               width: 10rem;
-              height: 10rem;          
+              height: 10rem;   
+              @media @mobile1 {
+                width: 6rem;
+                height: 6rem; 
+                padding: 1rem;
+              }          
             }
             h2 {
               text-align: center;

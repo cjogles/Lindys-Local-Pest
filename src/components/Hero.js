@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="box1">
             <div className="heroText">
               <h4>LIVE IN COMFORT</h4>
-              <h2>CALL NOW AND SAVE $100</h2>
+              <a href="tel:3853140144"><h2>CALL NOW AND SAVE $100</h2></a>
               <h4 className="location">1ST YEAR OF SERVICE NORTHERN SLC AREA</h4>
             </div>
           </div>
