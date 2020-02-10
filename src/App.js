@@ -3,6 +3,7 @@ import '../src/css/index.css';
 
 import Hero from '../src/components/Hero.js';
 import Bugs from '../src/components/Bugs.js';
+import Footer from '../src/components/Footer.js';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="app">
         <Hero/>
         <Bugs/>
+        <Footer/>
       </div>
     </>
   );

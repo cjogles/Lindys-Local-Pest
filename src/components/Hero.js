@@ -16,10 +16,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="box2">
-
           </div>
           <div className="box3">
-
           </div>
         </div>
       </div>
