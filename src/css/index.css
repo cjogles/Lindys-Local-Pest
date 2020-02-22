@@ -132,389 +132,108 @@ html {
 .app {
   width: 100vw;
 }
-.hero {
-  height: 100vw;
-  width: 100vw;
-  background-image: url('/images/happy-family.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 55rem;
-}
-.hero .heroTextContainer {
-  justify-content: flex-start;
+.app {
   display: flex;
-  height: 100%;
-}
-.hero .heroTextContainer .box1 {
-  width: 33%;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width:500px) {
-  .hero .heroTextContainer .box1 {
-    width: 100%;
-    height: 25%;
-  }
-}
-.hero .heroTextContainer .box1 .heroText {
-  background: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  width: 70%;
-  height: 40%;
-  margin-top: 8rem;
-  border-radius: 5rem;
-  display: flex;
-  align-content: space-between;
   flex-direction: column;
 }
-@media (max-width:500px) {
-  .hero .heroTextContainer .box1 .heroText {
-    width: 60%;
-    margin-top: 2rem;
-    height: 10rem;
-    margin-right: 7rem;
-  }
-}
-.hero .heroTextContainer .box1 .heroText h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.3rem;
-  margin-top: 3rem;
-}
-@media (max-width:500px) {
-  .hero .heroTextContainer .box1 .heroText h4 {
-    font-size: 0.5rem;
-    margin-top: 1rem;
-  }
-}
-.hero .heroTextContainer .box1 .heroText a {
-  text-decoration: none;
-}
-.hero .heroTextContainer .box1 .heroText a h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  margin-top: 3rem;
-  color: #3d86ca;
-  text-decoration: none;
-}
-@media (max-width:500px) {
-  .hero .heroTextContainer .box1 .heroText a h2 {
-    font-size: 1.7rem;
-    margin-top: 1.2rem;
-  }
-}
-.hero .heroTextContainer .box2 {
-  width: 33%;
-}
-@media (max-width:500px) {
-  .hero .heroTextContainer .box2 {
-    width: 0.1%;
-  }
-}
-.hero .heroTextContainer .box3 {
-  width: 33%;
-}
-@media (max-width:500px) {
-  .hero .heroTextContainer .box3 {
-    width: 0.1%;
-  }
-}
-div.navBar1 {
-  background-color: skyblue;
+.nav1 {
   display: flex;
-  justify-content: space-between;
-  height: 4rem;
+  justify-content: flex-end;
+  flex-direction: row;
+  border: solid 1px lightgrey;
+}
+.nav1 div {
+  margin-right: 2rem;
+  text-align: center;
+}
+.nav1 div :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.nav1 div a p {
+  font-family: 'Raleway';
+  padding: 0.4rem;
+}
+.nav2 {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 1rem;
+}
+.nav2 .logo {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  width: 50%;
+}
+@media (max-width:900px) {
+  .nav2 .logo {
+    width: 30%;
+  }
+}
+.nav2 .nav2filler {
+  width: 20%;
+}
+@media (max-width:900px) {
+  .nav2 .nav2filler {
+    width: 10%;
+  }
+}
+.nav2 .nav2rightside {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-evenly;
+}
+@media (max-width:900px) {
+  .nav2 .nav2rightside {
+    width: 50%;
+  }
+}
+.nav2 .nav2rightside :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.nav2 .nav2rightside .pestDropDown {
+  display: flex;
   align-items: center;
 }
-@media (max-width:500px) {
-  div.navBar1 {
-    height: 3rem;
-  }
+.nav2 .nav2rightside .pestDropDown a p {
+  font-family: 'Raleway';
 }
-div.navBar1 a.navAnch1 {
-  padding-left: 6rem;
-  text-decoration: none;
-  color: white;
-  font-family: 'Lato' 'sans-serif';
-  font-size: 2rem;
-}
-@media (max-width:500px) {
-  div.navBar1 a.navAnch1 {
-    padding-left: 1rem;
-    font-size: 1rem;
-  }
-}
-div.navBar1 a.navAnch2 {
-  padding-right: 2rem;
-  text-decoration: none;
-  color: white;
-  font-family: 'Lato' 'sans-serif';
-  font-size: 1.2rem;
-}
-@media (max-width:500px) {
-  div.navBar1 a.navAnch2 {
-    padding-right: 1rem;
-    font-size: 0.5rem;
-  }
-}
-.navBar2 {
+.nav2 .nav2rightside .FreeQuote {
   display: flex;
-  justify-content: space-evenly;
-  background-color: #3d86ca;
-  box-shadow: 20px 20px 50px gray;
+  align-items: center;
 }
-.navBar2 a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-  border-radius: 8px;
-  font-family: 'Lato', sans-serif;
+.nav2 .nav2rightside .FreeQuote a p {
+  font-family: 'Raleway';
 }
-@media (max-width:500px) {
-  .navBar2 a {
-    font-size: 0.5rem;
-  }
-}
-div.bugs {
-  background-image: url('/images/white.jpg');
-  background-position: center;
+.maincontent {
+  background-image: url("/images/happy.jpg");
   background-size: cover;
-  padding-bottom: 4rem;
+  box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
+  background-position: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
-div.bugs div.bugsMenu {
+.maincontent .why {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  width: 50%;
+  align-items: center;
 }
-div.bugs div.bugsMenu h2 {
-  font-family: "Lato", sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  background-color: #3d86ca;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  box-shadow: 20px 20px 50px gray;
-}
-@media (max-width:500px) {
-  div.bugs div.bugsMenu h2 {
-    font-size: 1rem;
-  }
-}
-div.bugs div.bugsMenu p {
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  padding-right: 20%;
-  padding-left: 20%;
-  text-align: center;
-  color: black;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-@media (max-width:500px) {
-  div.bugs div.bugsMenu p {
-    font-size: 1rem;
-  }
-}
-div.bugs div.explore-bugs {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-div.bugs div.explore-bugs div.bug-row1 div {
-  display: flex;
-  justify-content: space-evenly;
-}
-div.bugs div.explore-bugs div.bug-row1 div div {
-  display: flex;
-  flex-direction: column;
-}
-div.bugs div.explore-bugs div.bug-row1 div div img {
-  width: 10rem;
-  height: 10rem;
-}
-@media (max-width:500px) {
-  div.bugs div.explore-bugs div.bug-row1 div div img {
-    width: 6rem;
-    height: 6rem;
-    padding: 1rem;
-  }
-}
-div.bugs div.explore-bugs div.bug-row1 div div h2 {
-  text-align: center;
-  padding-top: 0.5rem;
-}
-div.bugs div.explore-bugs div.bug-row2 {
-  margin-top: 4rem;
-}
-div.bugs div.explore-bugs div.bug-row2 div {
-  display: flex;
-  justify-content: space-evenly;
-}
-div.bugs div.explore-bugs div.bug-row2 div div {
-  display: flex;
-  flex-direction: column;
-}
-div.bugs div.explore-bugs div.bug-row2 div div img {
-  width: 10rem;
-  height: 10rem;
-}
-@media (max-width:500px) {
-  div.bugs div.explore-bugs div.bug-row2 div div img {
-    width: 6rem;
-    height: 6rem;
-    padding: 1rem;
-  }
-}
-div.bugs div.explore-bugs div.bug-row2 div div h2 {
-  text-align: center;
-  padding-top: 0.5rem;
-}
-div.bugs div.explore-bugs div.bug-row3 {
-  margin-top: 4rem;
-}
-div.bugs div.explore-bugs div.bug-row3 div {
-  display: flex;
-  justify-content: space-evenly;
-}
-div.bugs div.explore-bugs div.bug-row3 div div {
-  display: flex;
-  flex-direction: column;
-}
-div.bugs div.explore-bugs div.bug-row3 div div img {
-  width: 10rem;
-  height: 10rem;
-}
-@media (max-width:500px) {
-  div.bugs div.explore-bugs div.bug-row3 div div img {
-    width: 6rem;
-    height: 6rem;
-    padding: 1rem;
-  }
-}
-div.bugs div.explore-bugs div.bug-row3 div div h2 {
-  text-align: center;
-  padding-top: 0.5rem;
-}
-div.bugs div.explore-bugs div.bug-row4 {
-  margin-top: 4rem;
-}
-div.bugs div.explore-bugs div.bug-row4 div {
-  display: flex;
-  justify-content: space-evenly;
-}
-div.bugs div.explore-bugs div.bug-row4 div div {
-  display: flex;
-  flex-direction: column;
-}
-div.bugs div.explore-bugs div.bug-row4 div div img {
-  width: 10rem;
-  height: 10rem;
-}
-@media (max-width:500px) {
-  div.bugs div.explore-bugs div.bug-row4 div div img {
-    width: 6rem;
-    height: 6rem;
-    padding: 1rem;
-  }
-}
-div.bugs div.explore-bugs div.bug-row4 div div h2 {
-  text-align: center;
-  padding-top: 0.5rem;
-}
-div.bugs div.explore-bugs div.bug-row4 p {
-  padding-top: 2rem;
+.maincontent .why p {
+  width: 50%;
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
   text-align: center;
 }
-div.footerContainer {
-  display: flex;
-  background-color: #3d86ca;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-div.footerContainer div.box1 {
-  width: 33%;
-}
-div.footerContainer div.box1 h2 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
-  color: white;
-  padding-bottom: 2rem;
-}
-@media (max-width:500px) {
-  div.footerContainer div.box1 p {
-    display: none;
-  }
-}
-div.footerContainer div.box2 {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 12rem;
-}
-@media (max-width:500px) {
-  div.footerContainer div.box2 {
-    padding-left: 1rem;
-  }
-}
-div.footerContainer div.box2 a {
-  padding: 0.5rem;
-  text-decoration: none;
-  color: white;
-}
-div.footerContainer div.box3 {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-}
-div.footerContainer div.box3 a {
-  padding: 0.5rem;
-  text-decoration: none;
-  color: white;
-}
-@media (max-width:500px) {
-  div.footerContainer div.box3 a {
-    padding-left: 1rem;
-  }
-}
-div.footerContainer div.box3 button {
-  margin-top: 1rem;
-  width: 10rem;
-}
-div.footerContainer div.box3 button a {
-  color: black;
-}
-@media (max-width:500px) {
-  div.footerContainer div.box3 button {
-    display: none;
-  }
-}
-div.callNow {
-  display: none;
-}
-@media (max-width:500px) {
-  div.callNow {
-    display: flex;
-    justify-content: center;
-    background-color: #3d86ca;
-    text-align: center;
-  }
-}
-@media (max-width:500px) {
-  div.callNow button {
-    text-decoration: none;
-    margin-bottom: 1rem;
-    color: black;
-  }
-}
-@media (max-width:500px) {
-  div.callNow button a {
-    text-decoration: none;
-    color: black;
-  }
+.maincontent .maincontentFiller {
+  width: 50%;
 }

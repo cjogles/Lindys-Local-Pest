@@ -1,0 +1,48 @@
+.nav2 {
+  display: flex;
+  background-color: lighten((#f2f2f2), 2%);
+  padding: 1rem;
+  .logo {
+    font-size: 2rem;
+    font-family: 'Raleway', ;
+    width: 50%;
+    @media @tablet {
+      width: 30%;
+    }
+  }
+  .nav2filler {
+    width: 20%;
+    @media @tablet {
+      width: 10%;
+    }
+  }
+  .nav2rightside {
+    display:flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-evenly;
+    @media @tablet {
+      width:50%;
+    }
+    :hover {
+      background-color: #7fb742;
+      color: white;
+      transition: 0.6s;
+      cursor: pointer;
+    }
+    .pestDropDown {
+      display: flex;
+      align-items: center;
+      a p {
+        font-family: 'Raleway', ;
+      }
+    }
+    .FreeQuote {
+      display: flex;
+      align-items: center;
+      a p {
+        font-family: 'Raleway', ;
+      }
+    }
+  }
+}
