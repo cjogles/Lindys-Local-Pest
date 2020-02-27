@@ -313,7 +313,11 @@ html {
   transition: 0.6s;
   cursor: pointer;
 }
-.bugs .bugChart .bugrow p {
+.bugs .bugChart .bugrow a {
+  text-decoration: none;
+  color: black;
+}
+.bugs .bugChart .bugrow a p {
   padding: 2rem;
   font-family: 'Trade Winds';
   text-align: center;
@@ -415,4 +419,98 @@ html {
   background: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway';
   text-align: center;
+}
+.about {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about .aboutbar {
+  text-align: center;
+  border: solid 1px lightgrey;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.about .aboutbar p {
+  font-family: "Raleway";
+  font-size: 3rem;
+}
+.about .aboutChart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.about .aboutChart .chartContainer h2 {
+  font-family: 'Raleway';
+  color: black;
+  font-size: 2.6rem;
+  padding-top: 2rem;
+}
+.about .aboutChart .chartContainer h3 {
+  font-family: 'Raleway';
+  padding-top: 3rem;
+  color: #7fb742;
+  font-size: 2rem;
+}
+.about .aboutChart .chartContainer p {
+  font-family: 'Raleway';
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+section div.imgContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+section .section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+section .section div.bugDescription h2 {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+section .section div.bugDescription p {
+  font-family: 'Raleway';
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
+}
+section .section div.bugQuote {
+  text-align: center;
+  margin-top: 2rem;
+}
+section .section div.bugQuote a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+section .section div.bugQuote a :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+section .section div.bugQuote a p {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  background: lightgray;
+  border-radius: 5px;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

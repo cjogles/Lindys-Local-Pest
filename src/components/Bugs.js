@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Bugs() {
 
@@ -10,19 +11,19 @@ export default function Bugs() {
         </div>
         <div className='bugChart'>
           <div className='bugrow1 bugrow'>
-            <p>Ants</p>
-            <p>Spiders</p>
-            <p>Wasps</p>
+            <Link to="/ants" ><p>Ants</p></Link>
+            <Link to="/spiders" ><p>Spiders</p></Link>
+            <Link to="/wasps" ><p>Wasps</p></Link>
           </div>
           <div className='bugrow2 bugrow'>
-            <p>Rodents</p>
-            <p>Mosquitos</p>
-            <p>Fleas</p>
+            <Link to="/rodents" ><p>Rodents</p></Link>
+            <Link to="/mosquitos" ><p>Mosquitos</p></Link>
+            <Link to="/fleas" ><p>Fleas</p></Link>
           </div>
           <div className='bugrow3 bugrow'>
-            <p>Box Elder Bugs</p>
-            <p>Roaches</p>
-            <p>Ear Wigs</p>
+            <Link to="/boxelders" ><p>Box Elder Bugs</p></Link>
+            <Link to="/roaches" ><p>Roaches</p></Link>
+            <Link to="/earwigs" ><p>Ear Wigs</p></Link>
           </div>
         </div>
       </div>
