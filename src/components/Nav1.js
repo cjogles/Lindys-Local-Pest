@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav1() {
 
@@ -6,13 +7,13 @@ export default function Nav1() {
     <>
       <nav className="nav1">
         <div>
-          <a><p>LOCATIONS</p></a>
+          <Link to='/location'><p className="navLinks">LOCATIONS</p></Link>
         </div>
         <div>
-          <a><p>CUSTOMER PORTAL</p></a>
+          <a href='https://salesrabbit.com' rel="noopener noreferrer" target='_blank'><p className="navLinks">CUSTOMER PORTAL</p></a>
         </div>
         <div>
-          <a><p>CONTACT US</p></a>
+          <Link to='/contact'><p className="navLinks">CONTACT US</p></Link>
         </div>
       </nav>
     </>

@@ -135,12 +135,14 @@ html {
 .app {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .nav1 {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   border: solid 1px lightgrey;
+  overflow: hidden;
 }
 .nav1 div {
   margin-right: 2rem;
@@ -152,63 +154,91 @@ html {
   transition: 0.6s;
   cursor: pointer;
 }
-.nav1 div a p {
+.nav1 div a {
+  text-decoration: none;
+  color: gray;
+}
+.nav1 div a :hover {
+  color: white;
+  transition: 0.6s;
+}
+.nav1 div a p.navLinks {
   font-family: 'Raleway';
   padding: 0.4rem;
+  text-decoration: none;
 }
 .nav2 {
   display: flex;
   background-color: #f7f7f7;
   padding: 1rem;
+  overflow: hidden;
+  justify-content: space-between;
 }
 .nav2 .logo {
   font-size: 2rem;
   font-family: 'Raleway';
-  width: 50%;
+}
+.nav2 .logo a {
+  text-decoration: none;
+  color: black;
+}
+.nav2 .logo a h1.navLinks {
+  font-family: 'Raleway';
+  padding: 0.4rem;
+  text-decoration-line: initial;
 }
 @media (max-width:900px) {
-  .nav2 .logo {
-    width: 30%;
-  }
-}
-.nav2 .nav2filler {
-  width: 20%;
-}
-@media (max-width:900px) {
-  .nav2 .nav2filler {
-    width: 10%;
-  }
 }
 .nav2 .nav2rightside {
   display: flex;
   flex-direction: row;
-  width: 30%;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 @media (max-width:900px) {
-  .nav2 .nav2rightside {
-    width: 50%;
-  }
 }
-.nav2 .nav2rightside :hover {
+.nav2 .nav2rightside .pestDropDown {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.nav2 .nav2rightside .pestDropDown a {
+  text-decoration: none;
+  color: black;
+}
+.nav2 .nav2rightside .pestDropDown a :visited {
+  color: black;
+}
+.nav2 .nav2rightside .pestDropDown a :hover {
   background-color: #7fb742;
   color: white;
   transition: 0.6s;
   cursor: pointer;
 }
-.nav2 .nav2rightside .pestDropDown {
-  display: flex;
-  align-items: center;
-}
-.nav2 .nav2rightside .pestDropDown a p {
+.nav2 .nav2rightside .pestDropDown a p.navLinks {
   font-family: 'Raleway';
+  padding: 0.4rem;
+  text-decoration-line: initial;
+  font-size: 1.4rem;
 }
 .nav2 .nav2rightside .FreeQuote {
   display: flex;
   align-items: center;
 }
-.nav2 .nav2rightside .FreeQuote a p {
+.nav2 .nav2rightside .FreeQuote a {
+  text-decoration: none;
+  color: black;
+}
+.nav2 .nav2rightside .FreeQuote a :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.nav2 .nav2rightside .FreeQuote a p.navLinks {
   font-family: 'Raleway';
+  padding: 0.4rem;
+  text-decoration-line: initial;
+  font-size: 1.4rem;
 }
 .maincontent {
   background-image: url("/images/happy.jpg");
@@ -217,7 +247,9 @@ html {
   background-position: 100%;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  width: 100vw;
+  height: 35rem;
+  overflow: hidden;
 }
 .maincontent .why {
   display: flex;
@@ -235,5 +267,152 @@ html {
   text-align: center;
 }
 .maincontent .maincontentFiller {
+  display: flex;
+  justify-content: center;
   width: 50%;
+  align-items: center;
+}
+.maincontent .maincontentFiller p {
+  width: 50%;
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
+  text-align: center;
+}
+.bugs {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bugs .bugsbar {
+  text-align: center;
+  border: solid 1px lightgrey;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.bugs .bugsbar p {
+  font-family: "Raleway";
+  font-size: 3rem;
+}
+.bugs .bugChart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #f7f7f7;
+}
+.bugs .bugChart .bugrow {
+  padding: 2rem;
+}
+.bugs .bugChart .bugrow :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.bugs .bugChart .bugrow p {
+  padding: 2rem;
+  font-family: 'Trade Winds';
+  text-align: center;
+}
+.house {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.house .treatbar {
+  text-align: center;
+  border: solid 1px lightgrey;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.house .treatbar p {
+  font-family: "Raleway";
+  font-size: 3rem;
+}
+.house .treatbar img {
+  text-align: center;
+  border: solid red;
+}
+.house .treatmentBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #f7f7f7;
+}
+.house .treatmentBar .treatrow {
+  text-align: center;
+  padding: 2rem;
+}
+.house .treatmentBar .treatrow :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.house .treatmentBar .treatrow p {
+  padding: 2rem;
+  font-family: 'Trade Winds';
+  text-align: center;
+}
+.location {
+  background-image: url("/images/map.jpg");
+  background-size: cover;
+  box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
+  background-position: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+  flex-direction: column;
+}
+.location .where {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.location .where p {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
+  text-align: center;
+}
+.contact {
+  background-image: url("/images/contact.jpg");
+  background-size: cover;
+  box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
+  background-position: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+  flex-direction: column;
+}
+.contact .contactSection1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.contact .contactSection1 p {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
+  text-align: center;
 }

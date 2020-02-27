@@ -1,20 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav2() {
 
   return (
     <>
-      <nav className="nav2">
+      <nav className="nav2 nav2sticky">
         <div className="logo">
-          <a><h1>LINDYS LOCAL</h1></a>
+          <Link to='/'><h1 className="navLinks">LINDYS LOCAL</h1></Link>
         </div>
-        <div className="nav2filler"/>
         <div className="nav2rightside">
+        <div className="pestDropDown">
+            <Link to='/about'><p className="navLinks">ABOUT US</p></Link>
+          </div>
           <div className="pestDropDown">
-            <a><p>PEST CONTROL</p></a>
+            <Link to='/bugs'><p className="navLinks">PEST CONTROL</p></Link>
           </div>
           <div className="FreeQuote">
-            <a><p>GET FREE QUOTE</p></a>
+            <Link to='/contact'><p className="navLinks">GET FREE QUOTE</p></Link>
           </div>
         </div>
       </nav>
