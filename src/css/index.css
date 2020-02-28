@@ -376,14 +376,83 @@ html {
 .sectionfooter div.footerSection1 .col1 {
   width: 33%;
   text-align: center;
+  padding: 2rem;
+}
+.sectionfooter div.footerSection1 .col1 a {
+  text-decoration: none;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.sectionfooter div.footerSection1 .col1 a :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.sectionfooter div.footerSection1 .col1 a h2 {
+  font-size: 2rem;
+}
+.sectionfooter div.footerSection1 .col1 a {
+  text-decoration: none;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.sectionfooter div.footerSection1 .col1 a :hover {
+  background-color: #7fb742;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.sectionfooter div.footerSection1 .col1 a p {
+  margin-top: 1rem;
 }
 .sectionfooter div.footerSection1 .col2 {
   width: 33%;
   text-align: center;
+  padding: 2rem;
+}
+.sectionfooter div.footerSection1 .col2 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.sectionfooter div.footerSection1 .col2 p {
+  line-height: 1.5rem;
 }
 .sectionfooter div.footerSection1 .col3 {
   width: 33%;
   text-align: center;
+  padding: 2rem;
+}
+.sectionfooter div.footerSection1 .col3 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sectionfooter div.footerSection1 .col3 p.bold {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.sectionfooter div.footerSection1 .col3 p {
+  line-height: 2rem;
+}
+.sectionfooter div.footerSection2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: gray;
+  padding: 3rem;
+  font-family: 'Raleway';
+}
+.sectionfooter div.footerSection2 p {
+  font-family: 'Raleway';
+  color: white;
+  margin-bottom: 2rem;
+}
+.sectionfooter div.footerSection2 a {
+  text-decoration: none;
+  color: white;
 }
 .location {
   background-image: url("/images/map.jpg");
