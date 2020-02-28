@@ -5,7 +5,7 @@ export default function MainContent() {
     <>
       <div className="maincontent">
         <div className="maincontentFiller">
-          <p>TOP NOTCH <br></br> PEST CONTROL SERVICE</p>
+          <p>Family Focused <br></br> Pest Control Service</p>
         </div>
         <div className="why">
           <p>

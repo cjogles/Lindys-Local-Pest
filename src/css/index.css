@@ -273,8 +273,8 @@ html {
   align-items: center;
 }
 .maincontent .maincontentFiller p {
-  width: 50%;
-  font-size: 2.5rem;
+  width: 70%;
+  font-size: 4rem;
   padding: 2rem;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.8);
@@ -362,6 +362,27 @@ html {
 .house .treatmentBar .treatrow p {
   padding: 2rem;
   font-family: 'Trade Winds';
+  text-align: center;
+}
+.sectionfooter {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
+}
+.sectionfooter div.footerSection1 {
+  display: flex;
+  flex-direction: row;
+}
+.sectionfooter div.footerSection1 .col1 {
+  width: 33%;
+  text-align: center;
+}
+.sectionfooter div.footerSection1 .col2 {
+  width: 33%;
+  text-align: center;
+}
+.sectionfooter div.footerSection1 .col3 {
+  width: 33%;
   text-align: center;
 }
 .location {
