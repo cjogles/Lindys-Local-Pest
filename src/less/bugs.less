@@ -11,7 +11,12 @@
     p {
       font-family: "Raleway";
       font-size: 3rem;
-      
+      @media @tablet {
+        font-size: 2rem;
+      }
+      @media @mobile {
+        font-size: 1.8rem;
+      }
     }
   }
   .bugChart {

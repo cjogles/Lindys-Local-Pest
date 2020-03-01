@@ -148,6 +148,11 @@ html {
   margin-right: 2rem;
   text-align: center;
 }
+@media (max-width:400px) {
+  .nav1 div {
+    margin-right: 1rem;
+  }
+}
 .nav1 div :hover {
   background-color: #7fb742;
   color: white;
@@ -166,6 +171,16 @@ html {
   font-family: 'Raleway';
   padding: 0.4rem;
   text-decoration: none;
+}
+@media (max-width:900px) {
+  .nav1 div a p.navLinks {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width:400px) {
+  .nav1 div a p.navLinks {
+    font-size: 0.5rem;
+  }
 }
 .nav2 {
   display: flex;
@@ -188,13 +203,19 @@ html {
   text-decoration-line: initial;
 }
 @media (max-width:900px) {
+  .nav2 .logo a h1.navLinks {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:400px) {
+  .nav2 .logo a h1.navLinks {
+    font-size: 1rem;
+  }
 }
 .nav2 .nav2rightside {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-@media (max-width:900px) {
 }
 .nav2 .nav2rightside .pestDropDown {
   display: flex;
@@ -220,6 +241,16 @@ html {
   text-decoration-line: initial;
   font-size: 1.4rem;
 }
+@media (max-width:900px) {
+  .nav2 .nav2rightside .pestDropDown a p.navLinks {
+    font-size: 1rem;
+  }
+}
+@media (max-width:400px) {
+  .nav2 .nav2rightside .pestDropDown a p.navLinks {
+    font-size: 0.5rem;
+  }
+}
 .nav2 .nav2rightside .FreeQuote {
   display: flex;
   align-items: center;
@@ -240,6 +271,16 @@ html {
   text-decoration-line: initial;
   font-size: 1.4rem;
 }
+@media (max-width:900px) {
+  .nav2 .nav2rightside .FreeQuote a p.navLinks {
+    font-size: 1rem;
+  }
+}
+@media (max-width:400px) {
+  .nav2 .nav2rightside .FreeQuote a p.navLinks {
+    font-size: 0.5rem;
+  }
+}
 .maincontent {
   background-image: url("/images/happy.jpg");
   background-size: cover;
@@ -250,6 +291,14 @@ html {
   width: 100vw;
   height: 35rem;
   overflow: hidden;
+}
+@media (max-width:400px) {
+  .maincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 .maincontent .why {
   display: flex;
@@ -266,6 +315,21 @@ html {
   font-family: 'Raleway';
   text-align: center;
 }
+@media (max-width:900px) {
+  .maincontent .why p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent .why p {
+    font-size: 1rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent .why p {
+    font-size: 0.7rem;
+  }
+}
 .maincontent .maincontentFiller {
   display: flex;
   justify-content: center;
@@ -280,6 +344,21 @@ html {
   background: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway';
   text-align: center;
+}
+@media (max-width:900px) {
+  .maincontent .maincontentFiller p {
+    font-size: 2rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent .maincontentFiller p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent .maincontentFiller p {
+    font-size: 1.2rem;
+  }
 }
 .bugs {
   overflow: hidden;
@@ -296,6 +375,16 @@ html {
 .bugs .bugsbar p {
   font-family: "Raleway";
   font-size: 3rem;
+}
+@media (max-width:900px) {
+  .bugs .bugsbar p {
+    font-size: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .bugs .bugsbar p {
+    font-size: 1.8rem;
+  }
 }
 .bugs .bugChart {
   display: flex;
@@ -373,10 +462,23 @@ html {
   display: flex;
   flex-direction: row;
 }
+@media (max-width:700px) {
+  .sectionfooter div.footerSection1 {
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+  }
+}
 .sectionfooter div.footerSection1 .col1 {
   width: 33%;
   text-align: center;
   padding: 2rem;
+}
+@media (max-width:700px) {
+  .sectionfooter div.footerSection1 .col1 {
+    text-align: center;
+    align-self: center;
+  }
 }
 .sectionfooter div.footerSection1 .col1 a {
   text-decoration: none;
@@ -413,6 +515,12 @@ html {
   text-align: center;
   padding: 2rem;
 }
+@media (max-width:700px) {
+  .sectionfooter div.footerSection1 .col2 {
+    text-align: center;
+    align-self: center;
+  }
+}
 .sectionfooter div.footerSection1 .col2 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -424,6 +532,12 @@ html {
   width: 33%;
   text-align: center;
   padding: 2rem;
+}
+@media (max-width:700px) {
+  .sectionfooter div.footerSection1 .col3 {
+    text-align: center;
+    align-self: center;
+  }
 }
 .sectionfooter div.footerSection1 .col3 h2 {
   font-size: 1.5rem;

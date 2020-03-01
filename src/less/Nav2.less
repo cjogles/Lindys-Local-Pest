@@ -15,20 +15,20 @@
         font-family: 'Raleway', ;
         padding: .4rem;
         text-decoration-line: initial;
+        @media @tablet {
+          font-size: 1.5rem;
+        }
+        @media @mobile {
+          font-size: 1rem;
+        }
       }
     } 
-    @media @tablet {
-      // width: 30%;
-    }
   }
   .nav2rightside {
     display:flex;
     flex-direction: row;
     // width: 30%;
     justify-content: flex-end;
-    @media @tablet {
-      // width:50%;
-    }
     .pestDropDown {
       display: flex;
       align-items: center;
@@ -50,6 +50,12 @@
           padding: .4rem;
           text-decoration-line: initial;
           font-size: 1.4rem;
+          @media @tablet {
+            font-size: 1rem;
+          }
+          @media @mobile {
+            font-size: .5rem;
+          }
         }
       } 
     }
@@ -70,6 +76,12 @@
           padding: .4rem;
           text-decoration-line: initial;
           font-size: 1.4rem;
+          @media @tablet {
+            font-size: 1rem;
+          }
+          @media @mobile {
+            font-size: .5rem;
+          }
         }
       } 
     }

@@ -7,6 +7,9 @@
   div {
     margin-right: 2rem;
     text-align: center;
+    @media @mobile {
+      margin-right: 1rem;
+    }
     :hover {
       background-color: #7fb742;
       color: white;
@@ -24,6 +27,12 @@
         font-family: 'Raleway', ;
         padding: .4rem;
         text-decoration: none;
+        @media @tablet {
+          font-size: .9rem;
+        }
+        @media @mobile {
+          font-size: .5rem;
+        }
       }
     } 
   }
