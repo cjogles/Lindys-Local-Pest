@@ -10,7 +10,7 @@ export default function Footer() {
             <Link to="/">
               <h2>Lindys Local</h2>
             </Link>
-            <Link to="/locations">
+            <Link to="/location">
               <p>Locations</p>
             </Link>
             <a
