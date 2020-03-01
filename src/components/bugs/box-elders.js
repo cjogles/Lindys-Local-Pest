@@ -3,6 +3,7 @@ import Nav1 from "../Nav1";
 import Nav2 from "../Nav2";
 import {Link} from 'react-router-dom';
 import Bugs from '../Bugs';
+import Footer from '../Footer';
 
 export default function BoxElders() {
   return (
@@ -11,7 +12,7 @@ export default function BoxElders() {
         <Nav1 />
         <Nav2 />
 
-        <section>
+        <section className="bugdescribe">
           <div className="imgContainer"><img src="/images/box.jpg" alt="ant eating scraps picture"/></div>
           <div className="section">
             <div className ="bugDescription">
@@ -34,6 +35,7 @@ export default function BoxElders() {
           </div>
         </section>
         <Bugs/>
+        <Footer/>
       </div>
     </>
   );

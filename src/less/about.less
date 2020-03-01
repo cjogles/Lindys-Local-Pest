@@ -11,7 +11,12 @@
     p {
       font-family: "Raleway";
       font-size: 3rem;
-      
+      @media @main {
+        font-size: 2.4rem;
+      }
+      @media @mobile {
+        font-size: 1.5rem;
+      }
     }
   }
   .aboutChart {
@@ -21,6 +26,14 @@
     background-color: lighten((#f2f2f2), 2%);
     padding-left: 10rem;
     padding-right: 10rem;
+    @media @main {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    @media @mobile {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
     .chartContainer {
       
       h2 {
@@ -28,17 +41,29 @@
         color: black;
         font-size: 2.6rem;
         padding-top: 2rem;
+        @media @main {
+          font-size: 2rem;
+        }
+        @media @mobile {
+          font-size: 1.3rem;
+        }
       }
       h3 {
         font-family: 'Raleway', ;
         padding-top: 3rem;
         color: #7fb742;
         font-size: 2rem;
+        @media @mobile {
+          font-size: 1.3rem;
+        }
       }
       p {
         font-family: 'Raleway', ;
         padding-top:2rem;
         padding-bottom: 1rem;
+        @media @mobile {
+          font-size: .9rem;
+        }
       }
     }
   }

@@ -383,7 +383,7 @@ html {
 }
 @media (max-width:400px) {
   .bugs .bugsbar p {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 }
 .bugs .bugChart {
@@ -410,6 +410,11 @@ html {
   padding: 2rem;
   font-family: 'Trade Winds';
   text-align: center;
+}
+@media (max-width:400px) {
+  .bugs .bugChart .bugrow a p {
+    font-size: 1rem;
+  }
 }
 .house {
   overflow: hidden;
@@ -587,6 +592,11 @@ html {
   align-items: center;
   margin-top: 3rem;
 }
+@media (max-width:400px) {
+  .location .where {
+    margin-top: 2rem;
+  }
+}
 .location .where p {
   font-size: 2.5rem;
   margin-top: 3rem;
@@ -595,6 +605,13 @@ html {
   background: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway';
   text-align: center;
+}
+@media (max-width:400px) {
+  .location .where p {
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
 }
 .contact {
   background-image: url("/images/contact.jpg");
@@ -615,7 +632,11 @@ html {
   align-items: center;
   margin-top: 3rem;
 }
-.contact .contactSection1 p {
+.contact .contactSection1 a {
+  text-decoration: none;
+  color: black;
+}
+.contact .contactSection1 a p {
   font-size: 2.5rem;
   margin-top: 3rem;
   padding: 2rem;
@@ -623,6 +644,19 @@ html {
   background: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway';
   text-align: center;
+}
+@media (max-width:700px) {
+  .contact .contactSection1 a p {
+    font-size: 1.8rem;
+    padding: 1.3rem;
+  }
+}
+@media (max-width:400px) {
+  .contact .contactSection1 a p {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin-top: 2rem;
+  }
 }
 .about {
   overflow: hidden;
@@ -640,6 +674,16 @@ html {
   font-family: "Raleway";
   font-size: 3rem;
 }
+@media (max-width:700px) {
+  .about .aboutbar p {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width:400px) {
+  .about .aboutbar p {
+    font-size: 1.5rem;
+  }
+}
 .about .aboutChart {
   display: flex;
   justify-content: center;
@@ -648,11 +692,33 @@ html {
   padding-left: 10rem;
   padding-right: 10rem;
 }
+@media (max-width:700px) {
+  .about .aboutChart {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width:400px) {
+  .about .aboutChart {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .about .aboutChart .chartContainer h2 {
   font-family: 'Raleway';
   color: black;
   font-size: 2.6rem;
   padding-top: 2rem;
+}
+@media (max-width:700px) {
+  .about .aboutChart .chartContainer h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .about .aboutChart .chartContainer h2 {
+    font-size: 1.3rem;
+  }
 }
 .about .aboutChart .chartContainer h3 {
   font-family: 'Raleway';
@@ -660,56 +726,116 @@ html {
   color: #7fb742;
   font-size: 2rem;
 }
+@media (max-width:400px) {
+  .about .aboutChart .chartContainer h3 {
+    font-size: 1.3rem;
+  }
+}
 .about .aboutChart .chartContainer p {
   font-family: 'Raleway';
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-section {
+@media (max-width:400px) {
+  .about .aboutChart .chartContainer p {
+    font-size: 0.9rem;
+  }
+}
+.bugdescribe {
   display: flex;
   flex-direction: row;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
 }
-section div.imgContainer {
+@media (max-width: 1000px) {
+  .bugdescribe {
+    flex-direction: column;
+  }
+}
+.bugdescribe div.imgContainer {
   width: 50%;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
-section .section {
+@media (max-width: 1000px) {
+  .bugdescribe div.imgContainer {
+    width: 100%;
+  }
+}
+.bugdescribe div.imgContainer img {
+  width: 40rem;
+  height: 25rem;
+}
+@media (max-width: 1300px) {
+  .bugdescribe div.imgContainer img {
+    width: 30rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 1000px) {
+  .bugdescribe div.imgContainer img {
+    width: 20rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width:400px) {
+  .bugdescribe div.imgContainer img {
+    width: 10rem;
+    height: 5rem;
+  }
+}
+.bugdescribe .section {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-section .section div.bugDescription h2 {
+@media (max-width: 1000px) {
+  .bugdescribe .section {
+    width: 100%;
+  }
+}
+.bugdescribe .section div.bugDescription h2 {
   font-family: 'Raleway';
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
 }
-section .section div.bugDescription p {
+@media (max-width:400px) {
+  .bugdescribe .section div.bugDescription h2 {
+    font-size: 1.3rem;
+  }
+}
+.bugdescribe .section div.bugDescription p {
   font-family: 'Raleway';
   margin-top: 2rem;
   margin-bottom: 1rem;
   line-height: 1.7rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
-section .section div.bugQuote {
+@media (max-width:400px) {
+  .bugdescribe .section div.bugDescription p {
+    font-size: 0.7rem;
+  }
+}
+.bugdescribe .section div.bugQuote {
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-section .section div.bugQuote a {
+.bugdescribe .section div.bugQuote a {
   text-decoration: none;
   color: black;
   display: flex;
   justify-content: center;
 }
-section .section div.bugQuote a :hover {
+.bugdescribe .section div.bugQuote a :hover {
   background-color: #7fb742;
   color: white;
   transition: 0.6s;
   cursor: pointer;
 }
-section .section div.bugQuote a p {
+.bugdescribe .section div.bugQuote a p {
   font-family: 'Raleway';
   font-size: 2rem;
   background: lightgray;
@@ -717,4 +843,9 @@ section .section div.bugQuote a p {
   width: 50%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media (max-width:400px) {
+  .bugdescribe .section div.bugQuote a p {
+    font-size: 1rem;
+  }
 }

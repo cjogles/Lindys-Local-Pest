@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav1 from '../components/Nav1';
 import Nav2 from '../components/Nav2';
+import Footer from '../components/Footer';
 
 export default function Location() {
 
@@ -16,6 +17,7 @@ export default function Location() {
             <p>Layton</p>
           </div>
         </div>
+        <Footer/>
       </div>
     </>
   );
