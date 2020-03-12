@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Footer from '../components/Footer';
 
 export default function Bugs() {
 
@@ -26,6 +27,7 @@ export default function Bugs() {
             <Link to="/earwigs" ><p>Ear Wigs</p></Link>
           </div>
         </div>
+        <Footer/>
       </div>
     </>
   );
