@@ -27,7 +27,7 @@ export default function Bugs() {
             <Link to="/earwigs" ><p>Ear Wigs</p></Link>
           </div>
         </div>
-        <Footer/>
+
       </div>
     </>
   );
