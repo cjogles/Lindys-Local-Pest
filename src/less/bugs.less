@@ -22,16 +22,59 @@
   }
   .bugChart {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // flex-wrap: wrap;
+    // justify-content: center;
     flex-direction: row;
     background-color: lighten((#f2f2f2), 2%);
     // border: solid blue;
+    @media @tablet {
+      flex-direction: column;
+    }
+    .explainbugs {
+      width: 50%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      // border: solid blue;
+      flex-direction: row;
+      @media @tablet {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      img.arrow {
+        @media @tablet {
+          display: none;
+        }
+      }
+      img.downarrow {
+        display: none;
+        @media @tablet {
+          display: flex;
+        }
+      }
+      p {
+        font-family: 'Raleway', ;
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 2rem;
+        width: 70%;
+        margin-right: 3rem;
+        @media @tablet {
+          margin-right: 0rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
     .bugrow {
       // border: solid pink;
       padding: 2rem;
+      @media @tablet {
+        padding: 0rem;
+      }
       :hover {
-        background-color: #7fb742;
+        background-color: #00b33c;
         color: white;
         transition: 0.6s;
         cursor: pointer;
@@ -42,11 +85,14 @@
         p {
           padding: 2rem;
           // border: solid red;
-          font-family: 'Trade Winds', ;
+          font-family: 'Raleway', ;
           text-align: center;
           // background: rgba(255, 255, 255, .9);
           @media @mobile {
             font-size: 1rem;
+          }
+          @media @tablet {
+            padding: 2rem;
           }
         }
       }

@@ -7,7 +7,7 @@ export default function Nav2() {
     <>
       <nav className="nav2 nav2sticky">
         <div className="logo">
-          <Link to='/'><h1 className="navLinks">LINDYS LOCAL</h1></Link>
+          <Link to='/'><img src="/images/logo.jpg"/></Link>
         </div>
         <div className="nav2rightside">
         <div className="pestDropDown">

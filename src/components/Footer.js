@@ -8,18 +8,14 @@ export default function Footer() {
         <div className="footerSection1">
           <div className="col1">
             <Link to="/">
-              <h2>Lindys Local</h2>
+              <img src="/images/logo.jpg" />
             </Link>
             <Link to="/location">
               <p>Locations</p>
             </Link>
-            <a
-              href="https://salesrabbit.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <p className="navLinks">Customer Portal</p>
-            </a>
+            <Link to="/already">
+              <p className="navLinks">Already a Customer?</p>
+            </Link>
             <Link to="/privacy">
               <p>Privacy Policy</p>
             </Link>
@@ -33,11 +29,9 @@ export default function Footer() {
           </div>
           <div className="col3">
             <h2>Hours</h2>
-            <p className='bold'>Monday - Friday</p>
-            <p>7am - 7pm MST</p>
-            <p className='bold'>Saturday</p>
-            <p>7am - 4pm MST</p>
-            <p className='bold'>Sunday</p>
+            <p className="bold">Monday - Saturday</p>
+            <p>9am - 9pm MST</p>
+            <p className="bold">Sunday</p>
             <p>Closed</p>
           </div>
         </div>

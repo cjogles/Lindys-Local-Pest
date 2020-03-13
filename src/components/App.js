@@ -20,6 +20,7 @@ import Rodents from './bugs/rodents';
 import Spiders from './bugs/spiders';
 import Wasps from './bugs/wasps';
 import Privacy from './Privacy';
+import Already from './Already';
 import '../css/index.css';
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path='/privacy' exact>
             <Privacy/>
+          </Route>
+          <Route path='/already' exact>
+            <Already/>
           </Route>
 
           <Route path='/ants' exact>

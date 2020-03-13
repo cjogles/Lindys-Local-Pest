@@ -10,8 +10,11 @@ export default function Nav1() {
           <Link to='/location'><p className="navLinks">LOCATIONS</p></Link>
         </div>
         <div>
-          <a href='https://salesrabbit.com' rel="noopener noreferrer" target='_blank'><p className="navLinks">CUSTOMER PORTAL</p></a>
+        <Link to="/already">
+          <p className="navLinks">ALREADY A CUSTOMER?</p>
+        </Link>
         </div>
+        
         <div>
           <Link to='/contact'><p className="navLinks">CONTACT US</p></Link>
         </div>

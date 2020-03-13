@@ -145,6 +145,7 @@ html {
   flex-direction: row;
   border: solid 1px lightgrey;
   overflow-x: hidden;
+  background-color: #f7f7f7;
 }
 .nav1 div {
   margin-right: 2rem;
@@ -156,7 +157,7 @@ html {
   }
 }
 .nav1 div :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
@@ -186,14 +187,26 @@ html {
 }
 .nav2 {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: white;
   padding: 1rem;
   overflow-x: hidden;
   justify-content: space-between;
 }
-.nav2 .logo {
-  font-size: 2rem;
-  font-family: 'Raleway';
+.nav2 .logo img {
+  width: 12rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+@media (max-width:700px) {
+  .nav2 .logo img {
+    width: 8rem;
+    margin-left: 0;
+  }
+}
+@media (max-width:400px) {
+  .nav2 .logo img {
+    width: 5rem;
+  }
 }
 .nav2 .logo a {
   text-decoration: none;
@@ -232,7 +245,7 @@ html {
   color: black;
 }
 .nav2 .nav2rightside .pestDropDown a :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
@@ -262,7 +275,7 @@ html {
   color: black;
 }
 .nav2 .nav2rightside .FreeQuote a :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
@@ -391,16 +404,65 @@ html {
 }
 .bugs .bugChart {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: row;
   background-color: #f7f7f7;
+}
+@media (max-width:900px) {
+  .bugs .bugChart {
+    flex-direction: column;
+  }
+}
+.bugs .bugChart .explainbugs {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width:900px) {
+  .bugs .bugChart .explainbugs {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+@media (max-width:900px) {
+  .bugs .bugChart .explainbugs img.arrow {
+    display: none;
+  }
+}
+.bugs .bugChart .explainbugs img.downarrow {
+  display: none;
+}
+@media (max-width:900px) {
+  .bugs .bugChart .explainbugs img.downarrow {
+    display: flex;
+  }
+}
+.bugs .bugChart .explainbugs p {
+  font-family: 'Raleway';
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2rem;
+  width: 70%;
+  margin-right: 3rem;
+}
+@media (max-width:900px) {
+  .bugs .bugChart .explainbugs p {
+    margin-right: 0rem;
+    font-size: 1.4rem;
+  }
 }
 .bugs .bugChart .bugrow {
   padding: 2rem;
 }
+@media (max-width:900px) {
+  .bugs .bugChart .bugrow {
+    padding: 0rem;
+  }
+}
 .bugs .bugChart .bugrow :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
@@ -411,12 +473,17 @@ html {
 }
 .bugs .bugChart .bugrow a p {
   padding: 2rem;
-  font-family: 'Trade Winds';
+  font-family: 'Raleway';
   text-align: center;
 }
 @media (max-width:400px) {
   .bugs .bugChart .bugrow a p {
     font-size: 1rem;
+  }
+}
+@media (max-width:900px) {
+  .bugs .bugChart .bugrow a p {
+    padding: 2rem;
   }
 }
 .house {
@@ -446,20 +513,40 @@ html {
   flex-direction: row;
   background-color: #f7f7f7;
 }
-.house .treatmentBar .treatrow {
+.house .treatmentBar .treatmentBarCols {
+  flex-direction: column;
+}
+.house .treatmentBar .treatmentBarCols .images {
+  text-align: center;
+  margin-top: 1rem;
+}
+.house .treatmentBar .treatmentBarCols .text {
   text-align: center;
   padding: 2rem;
 }
-.house .treatmentBar .treatrow :hover {
-  background-color: #7fb742;
+.house .treatmentBar .treatmentBarCols .text :hover {
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
 }
-.house .treatmentBar .treatrow p {
+.house .treatmentBar .treatmentBarCols .text p {
   padding: 2rem;
-  font-family: 'Trade Winds';
+  font-family: "Raleway";
   text-align: center;
+}
+.house h3 {
+  background-color: #f7f7f7;
+  font-family: 'Raleway';
+  color: #00b33c;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+@media (max-width:400px) {
+  .house h3 {
+    font-size: 1.3rem;
+  }
 }
 .sectionfooter {
   display: flex;
@@ -489,6 +576,20 @@ html {
     align-self: center;
   }
 }
+.sectionfooter div.footerSection1 .col1 img {
+  width: 12rem;
+}
+@media (max-width:700px) {
+  .sectionfooter div.footerSection1 .col1 img {
+    width: 8rem;
+    margin-left: 0;
+  }
+}
+@media (max-width:400px) {
+  .sectionfooter div.footerSection1 .col1 img {
+    width: 5rem;
+  }
+}
 .sectionfooter div.footerSection1 .col1 a {
   text-decoration: none;
   color: black;
@@ -496,7 +597,7 @@ html {
   padding-bottom: 1rem;
 }
 .sectionfooter div.footerSection1 .col1 a :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
@@ -511,7 +612,7 @@ html {
   padding-bottom: 1rem;
 }
 .sectionfooter div.footerSection1 .col1 a :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;
@@ -523,6 +624,7 @@ html {
   width: 33%;
   text-align: center;
   padding: 2rem;
+  margin-top: 2rem;
 }
 @media (max-width:700px) {
   .sectionfooter div.footerSection1 .col2 {
@@ -533,9 +635,11 @@ html {
 .sectionfooter div.footerSection1 .col2 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .sectionfooter div.footerSection1 .col2 p {
   line-height: 1.5rem;
+  text-align: center;
 }
 .sectionfooter div.footerSection1 .col3 {
   width: 33%;
@@ -551,14 +655,17 @@ html {
 .sectionfooter div.footerSection1 .col3 h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .sectionfooter div.footerSection1 .col3 p.bold {
   line-height: 1.5rem;
   font-size: 1.2rem;
   text-decoration: underline;
+  text-align: center;
 }
 .sectionfooter div.footerSection1 .col3 p {
   line-height: 2rem;
+  text-align: center;
 }
 .sectionfooter div.footerSection2 {
   display: flex;
@@ -567,15 +674,18 @@ html {
   background-color: gray;
   padding: 3rem;
   font-family: 'Raleway';
+  text-align: center;
 }
 .sectionfooter div.footerSection2 p {
   font-family: 'Raleway';
   color: white;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .sectionfooter div.footerSection2 a {
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 .location {
   background-image: url("/images/map.jpg");
@@ -587,14 +697,64 @@ html {
   width: 100%;
   height: 40rem;
   overflow-x: hidden;
+}
+.location .where1 {
+  display: flex;
   flex-direction: column;
+  width: 49%;
+  font-size: 2.5rem;
+  font-family: "Raleway";
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.location .where1 p {
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: "Raleway";
+  text-align: center;
+}
+.location .where1 div.bugQuote {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.location .where1 div.bugQuote a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.location .where1 div.bugQuote a :hover {
+  background-color: #00b33c;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.location .where1 div.bugQuote a p {
+  font-family: "Raleway";
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width:400px) {
+  .location .where1 div.bugQuote a p {
+    font-size: 1rem;
+  }
 }
 .location .where {
+  width: 49%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
 }
 @media (max-width:400px) {
   .location .where {
@@ -607,7 +767,7 @@ html {
   padding: 2rem;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.8);
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-align: center;
 }
 @media (max-width:400px) {
@@ -639,6 +799,9 @@ html {
 .contact .contactSection1 a {
   text-decoration: none;
   color: black;
+}
+.contact .contactSection1 a :hover {
+  background: #00b33c;
 }
 .contact .contactSection1 a p {
   font-size: 2.5rem;
@@ -727,7 +890,7 @@ html {
 .about .aboutChart .chartContainer h3 {
   font-family: 'Raleway';
   padding-top: 3rem;
-  color: #7fb742;
+  color: #00b33c;
   font-size: 2rem;
 }
 @media (max-width:400px) {
@@ -744,6 +907,9 @@ html {
   .about .aboutChart .chartContainer p {
     font-size: 0.9rem;
   }
+}
+.about .aboutChart .chartContainer p#already {
+  margin-bottom: 2rem;
 }
 .bugdescribe {
   display: flex;
@@ -835,7 +1001,7 @@ html {
   justify-content: center;
 }
 .bugdescribe .section div.bugQuote a :hover {
-  background-color: #7fb742;
+  background-color: #00b33c;
   color: white;
   transition: 0.6s;
   cursor: pointer;

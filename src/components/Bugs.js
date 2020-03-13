@@ -11,6 +11,11 @@ export default function Bugs() {
           <p>What do you need help with?</p>
         </div>
         <div className='bugChart'>
+          <div className='explainbugs'>
+            <p>Click on a Bug's Name to Learn More About Each Pest</p>
+            <img className='arrow' src='/images/arrow.png' alt='arrow'/>
+            <img className='downarrow' src='/images/downarrow.png' alt='down arrow'/>
+          </div>
           <div className='bugrow1 bugrow'>
             <Link to="/ants" ><p>Ants</p></Link>
             <Link to="/spiders" ><p>Spiders</p></Link>

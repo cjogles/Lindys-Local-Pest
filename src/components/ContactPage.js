@@ -12,8 +12,8 @@ export default function ContactPage() {
         <Nav2/>
         <div className="contact">
           <div className="contactSection1">
-            <a href="tel:1-562-867-5309"><p className='tele'>Click to Call Us</p></a>
-            <a href='mailto:someone@example.com?Subject=Hello%20LindyLocal'><p className>Click to Email Us</p></a>
+            <a href="tel:385-306-0362"><p className='tele'>Click to Call Us</p></a>
+            <a href='mailto:lindyslocalpest@gmail.com?Subject=Hello%20LindyLocal'><p className>Click to Email Us</p></a>
           </div>
         </div>
         <Footer/>
