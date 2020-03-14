@@ -30,7 +30,7 @@ export default function Fleas() {
               </p>
             </div>
           <div className="bugQuote">
-            <Link to='/contact'><p>Get a Free Quote</p></Link>
+            <Link to='/contact'><p>Get a Free Quote!</p></Link>
           </div>
           </div>
         </section>
