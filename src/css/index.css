@@ -553,6 +553,7 @@ html {
   flex-direction: column;
   font-family: 'Raleway';
   overflow-x: hidden;
+  border: solid 1px lightgrey;
 }
 .sectionfooter div.footerSection1 {
   display: flex;

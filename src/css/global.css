@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.app {
+  width: 100vw;
+  overflow-x: hidden;
+}
