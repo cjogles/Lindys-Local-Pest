@@ -441,7 +441,7 @@ html {
 }
 .bugs .bugChart .explainbugs p {
   font-family: 'Raleway';
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   line-height: 2rem;
   width: 70%;
@@ -473,7 +473,7 @@ html {
 }
 .bugs .bugChart .bugrow a p {
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Raleway';
   text-align: center;
 }
