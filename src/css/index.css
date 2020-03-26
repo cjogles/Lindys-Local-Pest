@@ -487,6 +487,15 @@ html {
     padding: 2rem;
   }
 }
+.bugs .bugChart .bugrow2 {
+  vertical-align: center;
+  padding-top: 5rem;
+}
+@media (max-width:900px) {
+  .bugs .bugChart .bugrow2 {
+    padding-top: 0rem;
+  }
+}
 .house {
   overflow-x: hidden;
   display: flex;

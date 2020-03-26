@@ -14,7 +14,7 @@ import Ants from './bugs/ants';
 import BoxElders from './bugs/box-elders';
 import Earwigs from './bugs/earwigs';
 import Fleas from './bugs/fleas';
-import Mosquitos from './bugs/mosquitos';
+// import Mosquitos from './bugs/mosquitos';
 import Roaches from './bugs/roaches';
 import Rodents from './bugs/rodents';
 import Spiders from './bugs/spiders';
@@ -67,9 +67,9 @@ function App() {
           <Route path='/earwigs' exact>
             <Earwigs/>
           </Route>
-          <Route path='/mosquitos' exact>
+          {/* <Route path='/mosquitos' exact>
             <Mosquitos/>
-          </Route>
+          </Route> */}
           <Route path='/roaches' exact>
             <Roaches/>
           </Route>

@@ -22,7 +22,7 @@ export default function Bugs() {
           </div>
           <div className='bugrow2 bugrow'>
             <Link to="/rodents" ><p>Rodents</p></Link>
-            <Link to="/mosquitos" ><p>Mosquitos</p></Link>
+            {/* <Link to="/mosquitos" ><p>Mosquitos</p></Link> */}
             <Link to="/fleas" ><p>Fleas</p></Link>
           </div>
           <div className='bugrow3 bugrow'>
