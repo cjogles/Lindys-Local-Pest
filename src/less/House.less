@@ -12,6 +12,12 @@
     p {
       font-family: "Raleway";
       font-size: 3rem;
+      @media @tablet {
+        font-size: 2rem;
+      }
+      @media @mobile {
+        font-size: 1rem;
+      }
     }
     img {
       text-align: center;
@@ -32,17 +38,19 @@
       }
       .text {
         text-align: center;
-        padding: 2rem;
-        :hover {
-          background-color: #00b33c;
-          color: white;
-          transition: 0.6s;
-          cursor: pointer;
-        }
+        // transition: 0.6s;
+        cursor: pointer;
+        display:flex;
+        justify-content: center;
         p {
           padding: 2rem;
+          font-size: 2rem;
           font-family: "Raleway";
           text-align: center;
+          padding: 2rem;
+          // background-color: #00b33c;
+          // color: white;
+          width: 70%;
         }
       }
     }

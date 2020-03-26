@@ -21,6 +21,7 @@ import Spiders from './bugs/spiders';
 import Wasps from './bugs/wasps';
 import Privacy from './Privacy';
 import Already from './Already';
+import How from './How';
 import '../css/index.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Nav1/>
             <Nav2/>
             <MainContent/>
+            <How/>
             <Bugs/>
             <House/>
             <Footer/>

@@ -5,7 +5,7 @@ export default function MainContent() {
     <>
       <div className="maincontent">
         <div className="maincontentFiller">
-          <p>Family Focused <br></br> Pest Control Service</p>
+          <p>As a Family at Lindy's Local <br></br> We Believe In Making an Honest Difference To Protect Your Home and Family.</p>
         </div>
         <div className="why">
           <p>

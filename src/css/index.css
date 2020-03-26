@@ -193,7 +193,7 @@ html {
   justify-content: space-between;
 }
 .nav2 .logo img {
-  width: 12rem;
+  width: 18rem;
   margin-left: 2rem;
   margin-right: 0.5rem;
 }
@@ -316,7 +316,7 @@ html {
   }
 }
 .maincontent .why {
-  display: flex;
+  display: none;
   justify-content: center;
   width: 50%;
   align-items: center;
@@ -353,7 +353,7 @@ html {
 }
 .maincontent .maincontentFiller p {
   width: 70%;
-  font-size: 4rem;
+  font-size: 2.9rem;
   padding: 2rem;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.8);
@@ -473,6 +473,7 @@ html {
 }
 .bugs .bugChart .bugrow a p {
   padding: 2rem;
+  font-size: 2rem;
   font-family: 'Raleway';
   text-align: center;
 }
@@ -502,6 +503,16 @@ html {
   font-family: "Raleway";
   font-size: 3rem;
 }
+@media (max-width:900px) {
+  .house .treatbar p {
+    font-size: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .house .treatbar p {
+    font-size: 1rem;
+  }
+}
 .house .treatbar img {
   text-align: center;
   border: solid red;
@@ -522,18 +533,16 @@ html {
 }
 .house .treatmentBar .treatmentBarCols .text {
   text-align: center;
-  padding: 2rem;
-}
-.house .treatmentBar .treatmentBarCols .text :hover {
-  background-color: #00b33c;
-  color: white;
-  transition: 0.6s;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .house .treatmentBar .treatmentBarCols .text p {
-  padding: 2rem;
+  font-size: 2rem;
   font-family: "Raleway";
   text-align: center;
+  padding: 2rem;
+  width: 70%;
 }
 .house h3 {
   background-color: #f7f7f7;
@@ -605,6 +614,8 @@ html {
 }
 .sectionfooter div.footerSection1 .col1 a h2 {
   font-size: 2rem;
+  text-decoration: none;
+  color: black;
 }
 .sectionfooter div.footerSection1 .col1 a {
   text-decoration: none;
@@ -633,10 +644,21 @@ html {
     align-self: center;
   }
 }
-.sectionfooter div.footerSection1 .col2 h2 {
+.sectionfooter div.footerSection1 .col2 a {
+  text-decoration: none;
+}
+.sectionfooter div.footerSection1 .col2 a :hover {
+  background-color: #00b33c;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.sectionfooter div.footerSection1 .col2 a h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: black;
+  text-decoration: none;
 }
 .sectionfooter div.footerSection1 .col2 p {
   line-height: 1.5rem;
@@ -1094,5 +1116,84 @@ html {
 @media (max-width:400px) {
   .bugdescribe .section div.bugQuote a p {
     font-size: 1rem;
+  }
+}
+.how {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.how .howbar {
+  text-align: center;
+  border: solid 1px lightgrey;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.how .howbar p {
+  font-family: "Raleway";
+  font-size: 3rem;
+}
+@media (max-width:900px) {
+  .how .howbar p {
+    font-size: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .how .howbar p {
+    font-size: 1rem;
+  }
+}
+.how .howChart {
+  display: flex;
+  flex-direction: row;
+  background-color: #f7f7f7;
+}
+@media (max-width:900px) {
+  .how .howChart {
+    flex-direction: column;
+  }
+}
+.how .howChart .explainHow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width:900px) {
+  .how .howChart .explainHow {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+@media (max-width:900px) {
+  .how .howChart .explainHow img.arrow {
+    display: none;
+  }
+}
+.how .howChart .explainHow img.downarrow {
+  display: none;
+}
+@media (max-width:900px) {
+  .how .howChart .explainHow img.downarrow {
+    display: flex;
+  }
+}
+.how .howChart .explainHow p {
+  font-family: 'Raleway';
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2rem;
+  width: 70%;
+  padding: 4rem;
+  margin-right: 3rem;
+}
+@media (max-width:900px) {
+  .how .howChart .explainHow p {
+    margin-right: 0rem;
+    font-size: 1.4rem;
   }
 }

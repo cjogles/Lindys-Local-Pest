@@ -21,7 +21,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="col2">
-            <h2>Mission Statement</h2>
+          <Link to="/contact"><h2>Get a Free Quote!</h2></Link>
             <p>
               We provide a local touch to pest control service by taking care of
               pests so you don't have to.

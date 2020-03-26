@@ -1,0 +1,72 @@
+.how {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    .howbar {
+      text-align: center;
+      border: solid 1px lightgrey;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      p {
+        font-family: "Raleway";
+        font-size: 3rem;
+        @media @tablet {
+          font-size: 2rem;
+        }
+        @media @mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+    .howChart {
+      display: flex;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      flex-direction: row;
+      background-color: lighten((#f2f2f2), 2%);
+      // border: solid blue;
+      @media @tablet {
+        flex-direction: column;
+      }
+      .explainHow {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        // border: solid blue;
+        flex-direction: row;
+        @media @tablet {
+          flex-direction: column;
+          width: 100%;
+          margin-top: 1rem;
+        }
+        img.arrow {
+          @media @tablet {
+            display: none;
+          }
+        }
+        img.downarrow {
+          display: none;
+          @media @tablet {
+            display: flex;
+          }
+        }
+        p {
+          font-family: 'Raleway', ;
+          font-size: 1.8rem;
+          text-align: center;
+          line-height: 2rem;
+          width: 70%;
+          padding: 4rem;
+          margin-right: 3rem;
+          @media @tablet {
+            margin-right: 0rem;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  
