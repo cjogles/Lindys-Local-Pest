@@ -297,22 +297,41 @@ html {
   }
 }
 .maincontent {
-  background-image: url("/images/happy.jpg");
+  background-image: url("/images/closeup.JPG");
   background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
-  background-position: 100%;
+  background-position: center;
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 35rem;
+  height: 40rem;
   overflow-x: hidden;
+}
+@media (max-width:800px) {
+  .maincontent {
+    background-size: 100%;
+    height: 30rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent {
+    height: 25rem;
+  }
+}
+@media (max-width:600px) {
+  .maincontent {
+    height: 20rem;
+  }
+}
+@media (max-width:500px) {
+  .maincontent {
+    height: 18rem;
+  }
 }
 @media (max-width:400px) {
   .maincontent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 15rem;
   }
 }
 .maincontent .why {
@@ -348,31 +367,51 @@ html {
 .maincontent .maincontentFiller {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 30%;
   align-items: center;
+  margin-left: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 8rem;
+}
+@media (max-width:700px) {
+  .maincontent .maincontentFiller {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent .maincontentFiller {
+    margin-left: 0rem;
+  }
 }
 .maincontent .maincontentFiller p {
   width: 70%;
-  font-size: 2.9rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway';
   text-align: center;
+  font-size: 2rem;
 }
-@media (max-width:900px) {
+@media (max-width: 1000px) {
   .maincontent .maincontentFiller p {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 @media (max-width:700px) {
   .maincontent .maincontentFiller p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width:500px) {
+  .maincontent .maincontentFiller p {
+    font-size: 0.7rem;
+    padding: 0.5rem;
   }
 }
 @media (max-width:400px) {
   .maincontent .maincontentFiller p {
-    font-size: 1.2rem;
+    font-size: 0.4rem;
   }
 }
 .bugs {
@@ -882,52 +921,133 @@ html {
     font-size: 1rem;
   }
 }
-.contact {
-  background-image: url("/images/contact.jpg");
+.maincontent2 {
+  background-image: url("/images/hero.JPG");
   background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
-  background-position: 100%;
+  background-position: center;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   height: 40rem;
   overflow-x: hidden;
-  flex-direction: column;
 }
-.contact .contactSection1 {
-  display: flex;
+@media (max-width:800px) {
+  .maincontent2 {
+    background-size: 100%;
+    height: 30rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent2 {
+    height: 25rem;
+  }
+}
+@media (max-width:600px) {
+  .maincontent2 {
+    height: 20rem;
+  }
+}
+@media (max-width:500px) {
+  .maincontent2 {
+    height: 18rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent2 {
+    height: 15rem;
+  }
+}
+.maincontent2 .why2 {
+  display: none;
   justify-content: center;
-  flex-direction: column;
+  width: 50%;
   align-items: center;
-  margin-top: 3rem;
 }
-.contact .contactSection1 a {
-  text-decoration: none;
-  color: black;
-}
-.contact .contactSection1 a :hover {
-  background: #00b33c;
-}
-.contact .contactSection1 a p {
+.maincontent2 .why2 p {
+  width: 50%;
   font-size: 2.5rem;
-  margin-top: 3rem;
   padding: 2rem;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway';
   text-align: center;
 }
+@media (max-width:900px) {
+  .maincontent2 .why2 p {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width:700px) {
-  .contact .contactSection1 a p {
-    font-size: 1.8rem;
-    padding: 1.3rem;
+  .maincontent2 .why2 p {
+    font-size: 1rem;
   }
 }
 @media (max-width:400px) {
-  .contact .contactSection1 a p {
-    font-size: 1.2rem;
-    padding: 0.8rem;
-    margin-top: 2rem;
+  .maincontent2 .why2 p {
+    font-size: 0.7rem;
+  }
+}
+.maincontent2 .maincontentFiller2 {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 8rem;
+}
+@media (max-width:700px) {
+  .maincontent2 .maincontentFiller2 {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent2 .maincontentFiller2 {
+    margin-left: 0rem;
+  }
+}
+.maincontent2 .maincontentFiller2 div.contactSection2 a {
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+}
+.maincontent2 .maincontentFiller2 div.contactSection2 a :hover {
+  background-color: #00b33c;
+  color: white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.maincontent2 .maincontentFiller2 div.contactSection2 a p {
+  width: 70%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 1000px) {
+  .maincontent2 .maincontentFiller2 div.contactSection2 a p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent2 .maincontentFiller2 div.contactSection2 a p {
+    font-size: 1rem;
+  }
+}
+@media (max-width:500px) {
+  .maincontent2 .maincontentFiller2 div.contactSection2 a p {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent2 .maincontentFiller2 div.contactSection2 a p {
+    font-size: 0.4rem;
   }
 }
 .about {
@@ -1204,5 +1324,124 @@ html {
   .how .howChart .explainHow p {
     margin-right: 0rem;
     font-size: 1.4rem;
+  }
+}
+.maincontent1 {
+  background-image: url("/images/hero.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 40rem;
+  overflow-x: hidden;
+}
+@media (max-width:800px) {
+  .maincontent1 {
+    background-size: 100%;
+    height: 30rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent1 {
+    height: 25rem;
+  }
+}
+@media (max-width:600px) {
+  .maincontent1 {
+    height: 20rem;
+  }
+}
+@media (max-width:500px) {
+  .maincontent1 {
+    height: 18rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent1 {
+    height: 15rem;
+  }
+}
+.maincontent1 .why1 {
+  display: none;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+.maincontent1 .why1 p {
+  width: 50%;
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
+  text-align: center;
+  margin: 1rem;
+}
+@media (max-width:900px) {
+  .maincontent1 .why1 p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent1 .why1 p {
+    font-size: 1rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent1 .why1 p {
+    font-size: 0.7rem;
+  }
+}
+.maincontent1 .maincontentFiller1 {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 8rem;
+}
+@media (max-width:700px) {
+  .maincontent1 .maincontentFiller1 {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent1 .maincontentFiller1 {
+    margin-left: 0rem;
+  }
+}
+.maincontent1 .maincontentFiller1 p {
+  width: 70%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 1000px) {
+  .maincontent1 .maincontentFiller1 p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:700px) {
+  .maincontent1 .maincontentFiller1 p {
+    font-size: 1rem;
+  }
+}
+@media (max-width:500px) {
+  .maincontent1 .maincontentFiller1 p {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width:400px) {
+  .maincontent1 .maincontentFiller1 p {
+    font-size: 0.4rem;
   }
 }

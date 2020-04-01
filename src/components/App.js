@@ -5,6 +5,7 @@ import Nav2 from './Nav2';
 import MainContent from './MainContent';
 import Bugs from './Bugs';
 import House from './House';
+import Thankyou from './Thankyou';
 import Footer from './Footer';
 import Location from './Location';
 import BugsPage from './BugsPage';
@@ -36,6 +37,7 @@ function App() {
             <How/>
             <Bugs/>
             <House/>
+            <Thankyou/>
             <Footer/>
           </Route>
 

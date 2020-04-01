@@ -1,0 +1,106 @@
+.maincontent1 {
+    background-image: url("/images/hero.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2),
+      inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 40rem;
+    overflow-x: hidden;
+    @media @middle {
+      background-size: 100%;
+      height: 30rem;
+    }
+    @media @main {
+      height: 25rem;
+    }
+    @media @location {
+      height: 20rem;
+    }
+    @media @hero {
+      height: 18rem;
+    }
+    @media @mobile {
+      height: 15rem;
+    }
+    .why1 {
+      display: none;
+      justify-content: center;
+      width: 50%;
+      align-items: center;
+      p {
+        width: 50%;
+        font-size: 2.5rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        background: rgba(255, 255, 255, .8);
+        font-family: 'Raleway', ;
+        text-align: center;
+        margin: 1rem;
+        @media @tablet {
+          font-size: 1.5rem;
+        }
+        @media @main {
+          font-size: 1rem;
+        }
+        @media @mobile {
+          font-size: .7rem;
+        }
+      }
+    }
+    .maincontentFiller1 {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      align-items: center;
+      margin-left: 2rem;
+      margin-top: 0rem;
+      margin-bottom: 8rem;
+      @media @main {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+      }
+      @media @mobile {
+        margin-left: 0rem;
+      }
+      // :hover {
+      //   background-color: #00b33c;
+      //   color: white;
+      //   transition: 0.6s;
+      //   cursor: pointer;
+      // }
+      p {
+        width: 70%;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        background: rgba(255, 255, 255, .8);
+        font-family: 'Raleway', ;
+        text-align: center;
+        font-size: 2rem;
+        @media @picMed {
+          font-size: 1.4rem;
+        }
+        @media @main {
+          font-size: 1rem;
+        }
+        @media @hero {
+          font-size: .7rem;
+          padding: .5rem;
+        }
+        @media @mobile {
+          font-size: .4rem;
+        }
+        // :hover {
+        //   background-color: #00b33c;
+        //   color: white;
+        //   transition: 0.6s;
+        //   cursor: pointer;
+        // }
+      }
+    }
+  }
+  

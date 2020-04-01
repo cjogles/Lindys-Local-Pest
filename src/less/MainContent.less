@@ -1,19 +1,30 @@
 .maincontent {
-  background-image: url("/images/happy.jpg");
+  background-image: url("/images/closeup.JPG");
   background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: inset 0 11px 8px -10px rgba(0, 0, 0, 0.2),
     inset 0 -11px 8px -10px rgba(0, 0, 0, 0.2);
-  background-position: 100%;
+  background-position: center;
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 35rem;
+  height: 40rem;
   overflow-x: hidden;
+  @media @middle {
+    background-size: 100%;
+    height: 30rem;
+  }
+  @media @main {
+    height: 25rem;
+  }
+  @media @location {
+    height: 20rem;
+  }
+  @media @hero {
+    height: 18rem;
+  }
   @media @mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 15rem;
   }
   .why {
     display: none;
@@ -42,24 +53,39 @@
   .maincontentFiller {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 30%;
     align-items: center;
+    margin-left: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 8rem;
+    @media @main {
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    @media @mobile {
+      margin-left: 0rem;
+    }
     p {
       width: 70%;
-      font-size: 2.9rem;
-      padding: 2rem;
+      font-size: 2rem;
+      padding: 1rem;
       border-radius: 2rem;
       background: rgba(255, 255, 255, .8);
       font-family: 'Raleway', ;
       text-align: center;
-      @media @tablet {
-        font-size: 2rem;
+      font-size: 2rem;
+      @media @picMed {
+        font-size: 1.4rem;
       }
       @media @main {
-        font-size: 1.5rem;
+        font-size: 1rem;
+      }
+      @media @hero {
+        font-size: .7rem;
+        padding: .5rem;
       }
       @media @mobile {
-        font-size: 1.2rem;
+        font-size: .4rem;
       }
     }
   }
